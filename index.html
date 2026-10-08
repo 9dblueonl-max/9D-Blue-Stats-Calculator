@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9D Build Calculator</title>
+    <link rel="stylesheet" href="styles.v3.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel controls">
+        <div class="brand">
+          <div>
+            <p class="eyebrow">9Dragons Blue</p>
+            <h1>Build Calculator</h1>
+          </div>
+          <span class="badge">Current Stats</span>
+        </div>
+
+        <div class="row">
+          <label>
+            Version
+            <select id="version"></select>
+          </label>
+          <label>
+            Role
+            <select id="role"></select>
+          </label>
+        </div>
+
+        <div class="stats-grid" id="inputs"></div>
+
+        <div class="actions">
+          <button id="reset" type="button">Reset</button>
+          <button id="copy" type="button">Copy Build</button>
+        </div>
+      </section>
+
+      <section class="panel results">
+        <div class="summary">
+          <div>
+            <p class="eyebrow">Total Points</p>
+            <strong id="totalPoints">0</strong>
+          </div>
+          <div>
+            <p class="eyebrow">Selected</p>
+            <strong id="selectedBuild">New Vagabond</strong>
+          </div>
+        </div>
+
+        <div>
+          <h2 id="statsTitle">New Stats</h2>
+          <div class="result-grid" id="results"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.v3.js"></script>
+  </body>
+</html>
